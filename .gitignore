@@ -1,1 +1,25 @@
-doomlauncher.db
+# Ignore everything by default
+*
+
+# Allow traversing directories
+!*/
+
+# Allow only these source files
+!*.sql
+!*.py
+!*.sh
+
+# Keep the .gitignore itself (needed for rules to apply)
+!.gitignore
+
+# Explicit: compiled artifacts and C# sources (already covered by *)
+*.cs
+*.csproj
+*.sln
+*.dll
+*.exe
+*.pdb
+*.cache
+*.db
+bin/
+obj/
